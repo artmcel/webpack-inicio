@@ -1,10 +1,8 @@
-# Proyecto prospectación
+# Webpack starter
 
-Este es el proyecto de prospectación creado con webpack v5 y un backend en php7.
-El resultado final (productivo) esta diponible en el www de wamp64, /dist-prosp-update o /dist de este repo.
+Este es el proyecto inicial webpack v5.
 
 ## Notas:
-(Deprecate; recuerda que este proyecto estara disponible en ambos sitios web por lo cual en cada build productivo se tiene que cambiar el logotipo dependiendo el sitio web) -> revisar logo.js
 
 ### Recuerda revisar los updates de los modulos de node...
 
