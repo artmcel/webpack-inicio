@@ -1,7 +1,7 @@
 {
-  "name": "prospectacion",
+  "name": "web-pack-starter",
   "version": "3.0.0",
-  "description": "proyecto de prospectacion unimex",
+  "description": "configuracion inicial de webpack v5 para un proyecto",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
