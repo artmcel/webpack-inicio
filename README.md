@@ -11,6 +11,12 @@ Este es el proyecto inicial webpack v5.
 npm outdated
 ```
 
+### Dependencias externas
+- Bootstrap
+- SweetAlert
+
+si necesitas las animaciones de bootstrap no olvides agregar el js y popperjs.
+
 #### install check updates
 Si esto ya está instalado globalmente, ya no es necesario
 ```
