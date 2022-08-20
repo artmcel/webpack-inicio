@@ -1,4 +1,7 @@
+const path = require('path');
+const glob = require('glob');
 const HtmlWebPackPlugin       = require('html-webpack-plugin'); 
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 // deprecate for wp5 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 // dev mode to load css, extract-css plugin and style-loader NEVER together...
 //const webpack = require("webpack");
@@ -8,12 +11,20 @@ const HtmlWebPackPlugin       = require('html-webpack-plugin');
  * load plugins as a array
  */
 
+const PATHS = {
+  src: path.join(__dirname, 'src')
+}
+
+
 const plugins = [
     new HtmlWebPackPlugin({
         template: './src/index.html',
         filename: './index.html',
         chunks : ['index']
-    })
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    }),
 ];
 
 /*
